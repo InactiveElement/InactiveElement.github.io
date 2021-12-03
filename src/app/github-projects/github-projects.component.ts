@@ -20,7 +20,8 @@ export class GithubProjectsComponent implements OnInit {
     });
 
     this.githubService.getRepos().subscribe(repos => {
-      this.repos = repos;
+      var temp = repos as any[];
+      this.repos = temp.filter((repo) => repo.name != "InactiveElement.github.io");
       this.loadContributorRepos();
     });
   }
