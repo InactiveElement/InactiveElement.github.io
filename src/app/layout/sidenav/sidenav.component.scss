@@ -1,0 +1,30 @@
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  z-index: 6;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  width: 300px;
+  padding: 20px;
+}
+
+.navbut-container {
+    position: fixed; 
+    right: 15px; 
+    top: 15px;
+    z-index: 5;
+}
+
+.navicon {
+    font-size: 37px; 
+    width: 37px; 
+    height: 37px; 
+    vertical-align: bottom;
+}
+
+mat-drawer-container {
+  height: 100vh!important;
+}
