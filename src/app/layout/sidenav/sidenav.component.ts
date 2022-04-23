@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,19 +14,25 @@ export class SidenavComponent implements OnInit {
   }
 
   home() {
-    this.router.navigate(['/']);
+    const landingComponent = document.getElementById('landingComponent');
+    landingComponent.scrollIntoView();
   }
 
   gitProjects() {
-    this.router.navigate(['/projects']);
+    const githubComponent = document.getElementById('githubComponent');
+    githubComponent.scrollIntoView();
   }
   
   education() {
-    this.router.navigate(['/education']);
+    const educationComponent = document.getElementById('educationComponent');
+    educationComponent.scrollIntoView();
+    // {behavior:'smooth', block: 'nearest'}
   }
 
   personal() {
-    this.router.navigate(['/personal']);
+    const personalComponent = document.getElementById('personalComponent');
+    personalComponent.scrollIntoView();
+    // {behavior: 'smooth', block: 'nearest'}
   }
 
 }

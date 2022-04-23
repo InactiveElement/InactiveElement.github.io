@@ -12,9 +12,12 @@
 }
 
 .navbut-container {
+  background-color: #424242;
+    height: 50px;
+    width: 50px;
     position: fixed; 
-    right: 15px; 
-    top: 15px;
+    right: 3rem; 
+    top: 2rem;
     z-index: 5;
 }
 

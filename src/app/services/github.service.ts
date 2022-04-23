@@ -7,7 +7,7 @@ import { Observable,BehaviorSubject, map } from "rxjs";
 })
 export class GithubService {
 
-  private username = "InactiveElement";
+  private username = "Jaden-Harding";
   private username2 = "Waldo-byte"
   constructor(private http: HttpClient) {}
 

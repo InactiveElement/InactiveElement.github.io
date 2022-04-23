@@ -1,25 +1,53 @@
-<div *ngIf="loading"  >
-    <app-load-spinner></app-load-spinner>
-</div>
-<div *ngIf="!loading" >
+<div >
     <app-sidenav>
+        <div >
         <app-flex-layout-wrapper>
-            <div fxLayout="column">
-                <div style="padding-top: 20px;">
-                    <div class="img-container">
-                        <img src="assets/images/Jaden_Harding.jpg">
-                    </div>
-                    <div class="name-container">Jaden Harding</div>
-                </div>    
-                <div class="about">
-                        <div style="font-size: 35px; padding-bottom: 30px; font-weight: bold;" >About Me</div>
-                        <div class="text-container" style="font-size: 25px;" >I am currently a honours student at the North-West University in Potchefstroom. I am passionate about
-                            web and app development. Thus far in my studies I was part of developing a functional point of sale system for a team project and a full-stack website for 
-                            an individual project, making use of GitHub for source control.
+            <!-- [style.background-image]= "'url(/assets/images/autumn-background.jpg)'" -->
+            <div class="landing">
+                <div fxLayout="column" id="landingComponent" >
+                    <div style="padding-top: 20px;">
+                        <div class="img-container">
+                            <img src="assets/images/Jaden-Harding.jpg">
                         </div>
-                        <div class="text-container" style="font-size: 25px; padding-top: 15px;">By the way, this CV site was developed using Angular, its Material library and the GitHub API.</div>
+                        <div class="name-container" >Jaden Harding </div>
+                    </div>    
+                    <div fxLayout="row">
+                        <div class="img-links">
+                            <a href="https://linkedin.com/in/jaden-harding-42762b236" >
+                                <img style="padding-right: 20px;" height="50px" src="assets/images/linkedin.png">
+                            </a>
+                            <a href="https://github.com/Jaden-Harding">
+                                <img style="padding-right: 20px;" height="50px" src="assets/images/github.png">
+                            </a>
+                            <a href="https://www.instagram.com/jr_harding20/">
+                                <img height="50px" src="assets/images/instgram1.png">
+                            </a>
+                            
+                            
+                        </div>
+
                     </div>
-            </div>
-        </app-flex-layout-wrapper>
+                    <div class="about">
+                            <div style="font-size: 2.5rem; padding-bottom: 40px; padding-top: 1rem; font-weight: bold; color: whitesmoke;" >About Me</div>
+                            <div class="text-container" >I am a Bsc Computer Science graduate, currently enrolled in a Bsc Hons in Computer Science. I graduated with distinction and have 
+                                built my software development and team management skills through projects which are application, mobile and web based.  
+                            </div>
+                            <div class="text-container" style="padding-top: 15px;">By the way, this portfolio website was developed using Angular, its Material library and the GitHub API.</div>
+                        </div>
+                </div>
+        </div>
+        </app-flex-layout-wrapper >
+    </div>      
+        <div  >
+            <app-github-projects></app-github-projects>
+        </div>
+        <div  >
+            <app-education></app-education>
+        </div>
+        <div >
+            <app-personal></app-personal>
+        </div>
     </app-sidenav>
+
 </div>
+

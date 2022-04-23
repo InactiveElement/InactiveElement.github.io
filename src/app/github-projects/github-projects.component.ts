@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../services/github.service';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { LandingPageComponent } from '../landing-page/landing-page.component';
 
 @Component({
   selector: 'app-github-projects',
@@ -13,23 +14,25 @@ export class GithubProjectsComponent implements OnInit {
   repos: any;
   loading = true;
 
-
-  constructor(private githubService: GithubService) {
+  
+  constructor(private githubService: GithubService, private landingPage: LandingPageComponent) {
     this.githubService.getUser().subscribe(user => {
       this.user = user;
     });
 
     this.githubService.getRepos().subscribe(repos => {
       var temp = repos as any[];
-      this.repos = temp.filter((repo) => repo.name != "InactiveElement.github.io");
+      this.repos = temp.filter((repo) => repo.name != "Jaden-Harding.github.io" && repo.name != "Portfolio-Website") ;
+
       this.loadContributorRepos();
+      
     });
   }
 
   loadContributorRepos() {
     this.githubService.getRepos2().subscribe(contributorRepos => {
       var temp = contributorRepos as any[];
-      this.repos.push(temp.find((repo) => repo.name == "CMPG223-POS"));
+      this.repos.push(temp.find((repo) => repo.name == "CMPG223POS"));
       this.loading = false;
     });
   }
