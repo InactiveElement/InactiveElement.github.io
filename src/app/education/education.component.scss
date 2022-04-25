@@ -1,20 +1,19 @@
 .name-container {
-    text-shadow: 3px 3px 2px black;
-    background-color: #8b8a88; 
-    width: fit-content; 
+    color: #424242;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
     font-size: 50px; 
     display: block; 
-    padding: 20px; 
-    margin: -15px auto;
+    padding: 50px; 
     position: relative; 
     overflow-wrap: break-word; 
-    line-height: 40px;
     font-weight: bold;
-    border: 3px solid rgb(255, 255, 255);
+    text-align: left!important;
 }
 
-#educationComponent {
-    height: 800px;
+.education-text {
+    text-align: left;
+    margin-left: 80px;
+    color: #424242;
+    padding-top: 60px;
 }
-
 

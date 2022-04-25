@@ -23,6 +23,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PersonalComponent } from './personal/personal.component';
 import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
+import {MatDividerModule} from '@angular/material/divider'; 
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
     ReactiveFormsModule,
     MatCardModule,
     MatExpansionModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
