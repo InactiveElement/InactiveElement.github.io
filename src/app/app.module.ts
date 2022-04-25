@@ -24,6 +24,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { PersonalComponent } from './personal/personal.component';
 import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
 import {MatDividerModule} from '@angular/material/divider'; 
+import {MatProgressBarModule} from '@angular/material/progress-bar'; 
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
-    MatDividerModule
+    MatDividerModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

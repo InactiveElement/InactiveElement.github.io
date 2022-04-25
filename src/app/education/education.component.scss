@@ -1,4 +1,5 @@
 .name-container {
+    margin-top: 40px;
     color: #424242;
     text-shadow: 2px 2px 1px rgb(255, 255, 255);
     font-size: 50px; 
@@ -7,13 +8,50 @@
     position: relative; 
     overflow-wrap: break-word; 
     font-weight: bold;
-    text-align: left!important;
+    text-align: center!important;
 }
 
 .education-text {
     text-align: left;
-    margin-left: 80px;
+    margin-left: 120px;
     color: #424242;
     padding-top: 60px;
+}
+
+.background {
+    background-image: url(/assets/images/Education-Background1.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+.prog-bar {
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    height: 30px;
+    text-align: left;
+    color: white;
+    max-width: 800px;
+    
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #424242;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #a0a0a0;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+}
+
+.skills {
+    
+    font-size: 30px;
+    color: #424242;
+    text-align: left;
+    margin-left: 120px;
 }
 

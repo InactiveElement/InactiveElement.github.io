@@ -22,8 +22,8 @@ export class SidenavComponent implements OnInit {
     const githubComponent = document.getElementById('githubComponent');
     githubComponent.scrollIntoView();
   }
-  
-  education() {
+
+  resume() {
     const educationComponent = document.getElementById('educationComponent');
     educationComponent.scrollIntoView();
     // {behavior:'smooth', block: 'nearest'}
