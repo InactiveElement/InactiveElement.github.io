@@ -1,29 +1,44 @@
 .name-container {
-    text-shadow: 3px 3px 2px black;
-    background-color: #8b8a88; 
-    width: fit-content; 
+    margin-top: 60px;
+    margin-bottom: 40px;
     font-size: 50px; 
     display: block; 
     padding: 20px; 
-    margin: -15px auto;
     position: relative; 
     overflow-wrap: break-word; 
     line-height: 40px;
     font-weight: bold;
-    border: 3px solid rgb(255, 255, 255);
+    text-align: center;
 }
 
-.text-container {
-    background-color: #424242;
-    font-size: 17px;
-    padding: 15px;
-    margin-bottom: 1px;
+.contact {
+    background-image: url(/assets/images/Contact-Details.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    // background-color: aliceblue;
+    // overflow: hidden;
+    margin: auto;
 }
 
-.text-personal {
-    margin-left: auto;
+.img-links {
+    display: block;
+    margin: auto;
 }
 
-#personalComponent {
-    height: 600px;
+.link-butt {
+    margin-right: 20px;
 }
+
+.link-butt:hover {
+    cursor: pointer;
+    transform: translateY(-0.15rem);
+    transition: transform 150ms;
+}
+
+.contact-elements {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+

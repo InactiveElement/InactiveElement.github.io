@@ -1,33 +1,29 @@
-<div *ngIf="loading"  >
-    <app-load-spinner></app-load-spinner>
-</div>
-<div *ngIf="!loading" id="personalComponent" >
+<div id="personalComponent" >
     <app-sidenav>
-        <app-flex-layout-wrapper>
+        <div class="contact">
             <div fxLayout="column">
-                <div class="name-container" style="margin-top: 20px; margin-bottom: 40px;">Contact Details</div>
-                <div fxLayout="row" class="text-container">
-                    <div>Full Name:</div>
-                    <div class="text-personal">Jaden Ross Harding</div>
-                </div>
-                <div fxLayout="row" class="text-container">
-                    <div>Date of Birth:</div>
-                    <div class="text-personal">30 April 1999</div>
-                </div>
-                <div fxLayout="row" class="text-container">
-                    <div>Email address</div>
-                    <div class="text-personal">hardingjr@protonmail.com</div>
-                </div>
-                <div fxLayout="row" class="text-container" style="border-bottom: none;">
-                    <div>Location:</div>
-                    <div class="text-personal">Potchefstroom, South Africa</div>
-                </div>
-                <div fxLayout="row" class="text-container" style="border-bottom: none;">
-                    <div>Phone:</div>
-                    <div class="text-personal">+27 82 383 1249</div>
-                </div>
-            </div>
-        </app-flex-layout-wrapper>
+                <div class="name-container">Contact Details</div>
+                <p class="contact-elements">Jaden Harding</p>
+                <p class="contact-elements">Potchefstroom North-West, 2520</p>
+                <p class="contact-elements">hardingjr@protonmail.com</p>
+
+                <div fxLayout="row">
+                    <div class="img-links">
+                        <a href="https://linkedin.com/in/jaden-harding-42762b236" >
+                            <img height="50px" src="assets/images/linkedin.png" class="link-butt" style=" margin-top: 40px;">
+                        </a>
+                        <a href="https://github.com/Jaden-Harding">
+                            <img height="50px" src="assets/images/github.png" class="link-butt">
+                        </a>
+                        <a href="https://www.instagram.com/jr_harding20/">
+                            <img height="50px" src="assets/images/instgram1.png" class="link-butt">
+                        </a> 
+                    </div>
+                    </div>
+            
+        </div>
+        <div style="height: 80px;"></div>
+    </div>
     </app-sidenav>
     
 </div>

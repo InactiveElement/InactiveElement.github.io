@@ -9,17 +9,18 @@
     overflow-wrap: break-word; 
     font-weight: bold;
     text-align: center!important;
+    line-height: 50px;
 }
 
 .education-text {
     text-align: left;
-    margin-left: 120px;
+    margin-left: 160px;
     color: #424242;
     padding-top: 60px;
 }
 
 .background {
-    background-image: url(/assets/images/Education-Background1.jpg);
+    background-image: url(/assets/images/Education-Background.jpg);
     height: 100%;
     background-size: cover;
 }
@@ -27,12 +28,10 @@
 .prog-bar {
     margin: 20px;
     margin-bottom: 40px;
-    margin-left: 80px;
+    margin-left: 140px;
     height: 30px;
-    text-align: left;
     color: white;
-    max-width: 800px;
-    
+    max-width: 550px;
 }
 
 ::ng-deep .mat-progress-bar-fill::after {
@@ -48,10 +47,14 @@
 }
 
 .skills {
-    
     font-size: 30px;
     color: #424242;
     text-align: left;
-    margin-left: 120px;
+    margin-left: 180px;
+}
+
+.skills-layout {
+    display: block;
+    align-self: center;
 }
 
