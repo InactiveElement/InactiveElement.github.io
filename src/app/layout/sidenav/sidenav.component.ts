@@ -26,13 +26,14 @@ export class SidenavComponent implements OnInit {
   resume() {
     const educationComponent = document.getElementById('educationComponent');
     educationComponent.scrollIntoView();
-    // {behavior:'smooth', block: 'nearest'}
+    // { behavior: 'smooth', block: 'nearest', inline: 'end' }
+    
   }
 
   personal() {
     const personalComponent = document.getElementById('personalComponent');
     personalComponent.scrollIntoView();
-    // {behavior: 'smooth', block: 'nearest'}
+    
   }
 
 }
